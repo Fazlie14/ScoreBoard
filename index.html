@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Score Board</title>
+</head>
+<body>
+
+  <div id="hero-section">
+
+    <!--home score-->
+
+    <div id="home" >
+      <h1>HOME</h1>
+      <div class="score" id="home-score">
+     
+      </div>
+      
+      <div class="btn-container">
+     
+        
+        <button class="score-btn" onclick="addOne() ">+ 1</button>
+        <button class="score-btn" onclick="addTwo()">+ 2</button>
+        <button class="score-btn" onclick="addThree()">+ 3</button>
+      </div>
+      <p class="teamF">Team foul</p>
+      <div class="foulC">
+        <p class="teamF" id="1stTFoul" >0</p>
+      </div>
+      <button id="foul-btn" onclick="addFirstFoul()">+ Foul</button>
+      <button id="foul-btn" onclick="minusFirstFoul()">- Foul</button>
+
+      
+    </div>
+
+    
+  <!---timer and period--->
+
+  <div id="mid-container">
+
+    
+
+      <p class="period">Period</p>
+    <div class="period-cont">
+      <p class="teamF" id="periodD">0</p>
+    </div>
+ 
+
+
+    <p class="period">Time</p>
+    <div class="time-cont">
+      <p class="teamF" id="time"> 0:00</p>
+    </div>
+ 
+   
+
+
+<div class="group-1st-btn">
+  <button class="mid-btn" onclick="addPeriod()">+ Period</button>
+  <button class="mid-btn" onclick="minusPeriod()">- Period</button>
+  </div>
+<div class="group-2nd-btn">
+  <button class="mid-btn" onclick="addTime()">↑</button>
+  <button class="mid-btn" onclick="minusTime()">↓</button>
+  <button class="mid-btn" onclick="startTime()">Start</button>
+  <button class="mid-btn" onclick="pauseTime()">Pause</button>
+  <button class="mid-btn" onclick="stopTime()">Stop</button>
+
+</div>
+  
+ 
+  <button class="new-btn" onclick="newGame()">New game</button>
+
+    </div>
+    
+  
+  <!--guest score-->
+  
+    <div id="guest">
+      <h1>AWAY</h1>
+      <div class="score" id="guest-score">
+        
+      </div>
+      
+
+      <div class="btn-container">
+        <button class="score-btn" onclick="addOneGuest() ">+ 1</button>
+        <button class="score-btn" onclick="addTwoGuest()">+ 2</button>
+        <button class="score-btn" onclick="addThreeGuest()">+ 3</button>
+      </div>
+
+      <p class="teamF">Team foul</p>
+      <div class="foulC">
+        <p class="teamF" id="guestFoul">0</p>
+      </div>
+      <button id="foul-btn" onclick="addGuestFoul()">+ Foul</button>
+      <button id="foul-btn" onclick="minusGuestFoul()">- Foul</button>
+
+    </div>
+ 
+
+  </div>
+  
+
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>
