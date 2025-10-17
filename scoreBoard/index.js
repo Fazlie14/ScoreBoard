@@ -178,8 +178,8 @@ function stopTime() {
     timerInterval = null;
     seconds = 0;
     minutes = 0;
-    const updateTimeDisplay = updateTimeDisplay();
-    return updateTimeDisplay;
+    updateTimeDisplay();
+    return timeDisplay.textContent;
 }
 
 function newGame(){
